@@ -1,0 +1,48 @@
+.clients-section{
+  background-image: url("../img/images/client-bg.jpg");
+  background-position: right;
+  background-repeat: no-repeat ;
+  background-size: cover;
+  padding: 92px 0 80px;
+  @include laptop_1280{
+    background-size: cover;
+  }
+}
+
+.client-title{
+  margin-bottom: 84px;
+  text-align: center;
+  color: #010101;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include laptop_1280{
+    margin-bottom: 20px;
+  }
+}
+.clients-container{
+  text-align: justify;
+  max-width: 878px;
+  width: 70%;
+}
+
+
+
+.client-item{
+  margin-top: 76px;
+  width: 30%;
+  display: inline-block;
+  height: auto;
+  vertical-align: top;
+  &:nth-child(2n+1){
+    margin-top: 15px;
+
+  }
+  @include laptop_1280{
+    margin-top: 40px;
+    width: 30%;
+  }
+  @include phones_L{
+    width: 45%;
+  }
+}

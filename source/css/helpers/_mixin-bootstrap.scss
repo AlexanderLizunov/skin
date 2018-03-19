@@ -1,0 +1,63 @@
+$zindex-modal:             1040 !default;
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y); // IE9 only
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+  -moz-transition: -moz-transform $transition;
+  -o-transition: -o-transform $transition;
+  transition: transform $transition;
+}
+
+$modal-content-bg:                             #fff !default;
+$modal-content-fallback-border-color:          #999 !default;
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$border-radius-large:       6px !default;
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+  box-shadow: $shadow;
+}
+$modal-backdrop-bg:           #000 !default;
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+$modal-backdrop-opacity:      .5 !default;
+$modal-title-padding:         15px !default;
+$modal-header-border-color:   #e5e5e5 !default;
+$line-height-base:        1.428571429 !default; // 20/14
+$modal-title-line-height:     $line-height-base !default;
+$modal-inner-padding:         15px !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+$screen-sm:                  768px !default;
+
+$screen-sm-min:              $screen-sm !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;
+$modal-lg:                    900px !default;
+
+

@@ -1,0 +1,89 @@
+.advantages-section {
+  padding-top: 30px;
+}
+
+.advantages-container {
+  max-width: 1220px;
+  width: 73.75%;
+  margin: auto;
+  text-align: justify;
+  @include laptop_S {
+    width: 88%;
+  }
+  @include tablets {
+    width: 93.75%;
+  }
+  @include phones_L {
+    text-align: center;
+  }
+
+}
+
+.advantages-main-title {
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include laptop_1680{
+    font-size: 32px;
+  }
+}
+
+.advantages-item {
+  padding: 50px 10px 30px;
+  display: inline-block;
+  width: 23%;
+  max-width: 400px;
+  vertical-align: top;
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 340px;
+  transition: .5s;
+  position: relative;
+  &:hover{
+    z-index: 2;
+    box-shadow: 0 43px 128px rgba(0, 0, 0, 0.09);
+  }
+  @include tablets {
+    margin-top: 30px;
+    width: 43%;
+    padding-top: 50px;
+    min-height: 260px;
+  }
+  @include phones_L {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 60px;
+  }
+  @include phones_M{
+    width: 94%;
+  }
+}
+
+.advantages-image{
+  height: 62px;
+  width: auto;
+}
+
+.advantages-title{
+  margin-top: 44px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  @include phones_L{
+    font-size: 20px;
+  }
+}
+
+.advantages-text{
+  margin-top: 22px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  @include phones_L{
+    font-size: 20px;
+  }
+}

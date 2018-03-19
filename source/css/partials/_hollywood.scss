@@ -1,0 +1,62 @@
+.hollywood-section{
+  margin-top: 0px;
+  padding-top: 130px;
+  padding-bottom: 180px;
+  background-image: url("../img/images/hollywood.png");
+  background-color: #f6f6f6;
+  background-position: left top;
+  background-size: 53% 100% ;
+  position: relative;
+  z-index: 1;
+  .services-content-cover{
+    margin-top: 100px;
+    @include phones_landscape{
+      margin-top: 30px;
+    }
+  }
+  .services-content-title{
+    margin-left: 0;
+  }
+  .services-title-comment{
+    margin-top: 35px;
+  }
+  .services-block-left{
+    @include phones_landscape{
+      margin-top: 0;
+      width: 60%;
+      height: auto;
+    }
+  }
+  @include laptop_1440{
+    padding-bottom: 100px;
+  }
+  @include laptop_1280{
+    padding-bottom: 120px;
+    background-size: auto 100%;
+    background-position: -20% top;
+  }
+  @include laptop_S{
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  @include tablets{
+    background-position: left top;
+    background-size: 52% 100%;
+  }
+  @include phones_landscape{
+    padding-bottom: 60px;
+    padding-top: 80px;
+    background-position: right top;
+    margin-top: 0;
+    background-size: 100% 100%;
+  }
+  @include phones_L{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.hollywood-container{
+  max-width: 1260px;
+  margin-top: 0;
+}

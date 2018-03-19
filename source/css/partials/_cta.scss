@@ -1,0 +1,163 @@
+.cta-section{
+  margin-top: 20px;
+  padding: 42px 0 70px;
+  background-color: #191919;
+  text-align: center;
+  .timer-cover{
+    text-align: center;
+    @include phones_S{
+      text-align: justify;
+    }
+  }
+  .timer-comment{
+    margin-top: 14px;
+    display: inline-block;
+    @include phones_landscape{
+      display: block;
+      margin-bottom: 8px;
+    }
+    @include phones_L{
+      margin-right: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+  .content-block_timer{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+  }
+  .timer-item{
+    display: inline-block;
+    span{
+      display: inline;
+    }
+    .number{
+      margin-top: 0;
+      display: inline-block;
+      height: auto;
+      width: auto;
+      line-height: 1.2;
+      color: #ffffff;
+      font-size: 31px;
+      font-weight: 300;
+      background: transparent;
+      min-width: 44px;
+      @include phones_L{
+        font-size: 26px;
+        min-width: auto;
+      }
+    }
+  }
+  .form-cover{
+    width: 100%;
+    max-width: none;
+    background: transparent;
+    box-shadow: none;
+    @include tablets{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include phones_L{
+      width: 85%;
+      margin: auto;
+    }
+    .inline-fake{
+      display: inline-block;
+    }
+  }
+  .item-cover{
+    width: 24%;
+    margin-top: 0;
+    height: 46px;
+    @include phones_landscape{
+      width: 23%;
+    }
+    @include phones_L{
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  .form-item{
+    border-radius: 100px;
+    border-bottom: 0;
+    padding-left: 25px;
+  }
+  .button-cover{
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    @include phones_landscape{
+      width: 27%;
+    }
+    @include phones_L{
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  .form-button-2{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    @include laptop_S{
+      font-size: 15px;
+    }
+    @include tablets{
+      font-size: 14px;
+    }
+    @include phones_landscape{
+      font-size: 14px;
+    }
+  }
+  //.form-checkbox-cover{
+  //  text-align: center;
+  //}
+  .form-comment{
+    color: white;
+    display: inline-block;
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .inline-fake{
+    display: none;
+    @include phones_S{
+      display: inline-block;
+    }
+  }
+}
+
+.cta-pre-title{
+  margin-top: 54px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include phones_landscape{
+    margin-top: 30px;
+  }
+}
+
+.cta-title{
+  margin-top: 8px;
+  color: #eacec3;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include phones_L{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  @include phones_M{
+    font-size: 24px;
+  }
+
+}
+

@@ -1,0 +1,131 @@
+.services-section{
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background-image: url("../img/images/services-bg.png");
+  background-size: 54% 76% ;
+  background-repeat: no-repeat;
+  background-position:  left bottom;
+  position: relative;
+  z-index: 2;
+  @include screenTo1930{
+    background-size: 56% 78% ;
+  }
+  @include laptop_1440{
+    background-size: 56% 84% ;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  @include laptop_1280{
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-size: 58% 85%;
+    background-position:  -12% bottom;
+  }
+  @include laptop_S{
+    background-position:  left bottom;
+    background-size: 100% 100%;
+  }
+  @include phones_landscape{
+    padding-top: 60px;
+    background-position: top left;
+    padding-bottom: 60px;
+  }
+  @include phones_L{
+    padding-top: 36px;
+    padding-bottom: 60px;
+  }
+}
+
+.services-main-title{
+  text-align: center;
+  color: rgba(63, 3, 72, 0);
+  color: #010101;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.services-container{
+  margin-top: 200px;
+  max-width: 1400px;
+  text-align: right;
+  @include laptop_1440{
+    margin-top: 60px;
+  }
+  @include laptop_1280{
+    margin-top: 100px;
+    text-align: justify;
+  }
+  @include laptop_S{
+    margin-top: 40px;
+  }
+  @include phones_landscape{
+    margin-top: 40px;
+  }
+}
+
+.services-block-left{
+  width: 49%;
+  height: auto;
+  vertical-align: top;
+  @include laptop_S{
+    margin-top: 60px;
+  }
+  @include phones_landscape{
+    width: 60%;
+    display: block;
+    margin: auto ;
+  }
+}
+
+.services-block-right{
+  margin-top: 22px;
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+  @include tablets{
+    width: 47%;
+  }
+  @include phones_landscape{
+    margin: 25px auto 0;
+    width: 90%;
+    display: block;
+  }
+}
+
+.services-content-cover{
+  display: inline-block;
+  width: 95%;
+  max-width: 400px;
+  text-align: left;
+  vertical-align: top;
+  @include phones_landscape{
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.services-content-title{
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.services-title,
+.services-title-comment{
+  color: rgba(63, 3, 72, 0);
+  font-weight: 700;
+  color: #000000;
+  font-size: 17px;
+  margin-left: -10px;
+  @include phones_L{
+    font-size: 21px;
+  }
+}
+
+.services-title-comment{
+  margin-bottom: 22px;
+  font-weight: 300;
+  margin-left: 0;
+
+}

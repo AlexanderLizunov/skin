@@ -1,0 +1,55 @@
+.sharing-section{
+  background-color: #191919;
+  padding: 93px 0 78px;
+  margin: 32px 0;
+}
+
+.sharing-container{
+  text-align: center;
+}
+
+.sharing-pre-title{
+  color: #fffeff;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+}
+
+.sharing-title{
+  margin-top: 8px;
+  color: #eacec3;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include phones_L{
+    margin-top: 25px;
+    font-size: 30px;
+  }
+  @include phones_M{
+    font-size: 27px;
+  }
+  @include phones_S{
+    font-size: 24px;
+  }
+}
+
+
+.social-buttons-cover{
+  margin-top: 48px;
+}
+
+.share-image{
+  height: 42px;
+  width: 42px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.vk-cover{
+  display: inline-block;
+  background-image: url("../img/images/vk-white.png");
+  background-size: contain ;
+  background-position: center;
+  background-repeat: no-repeat;
+}

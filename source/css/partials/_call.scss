@@ -1,0 +1,45 @@
+.call-section{
+  text-align: center;
+  padding: 80px 20px 45px;
+}
+
+.call-title{
+  color: #191919;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include phones_L{
+    font-size: 20px;
+  }
+  @include phones_M{
+    font-size: 18px;
+  }
+}
+
+.call-button{
+  margin-top: 36px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  width: 60%;
+  max-width: 230px;
+  box-shadow: 0 34px 86px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+  background-color: #d5b3a6;
+  text-transform: uppercase;
+  &:hover{
+    background-color: darken(#d5b3a6, 10%);
+  }
+}
+
+.socials-block{
+  margin-top: 54px;
+}
+
+
+.social-img{
+  margin: 0 15px;
+  height: 45px;
+  width: auto;
+
+}

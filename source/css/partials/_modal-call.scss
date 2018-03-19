@@ -1,0 +1,123 @@
+.modal-dialog{
+  width: 90%;
+  max-width: 406px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.modal-content{
+  border-radius: 0;
+}
+
+.call-modal-cover {
+  position: relative;
+}
+
+.call-modal-cover {
+  padding: 48px 20px 55px;
+  text-align: center;
+}
+
+.modal-title{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: none;
+}
+
+.call-form-block {
+  display: block;
+  max-width: 298px;
+  margin: 8px auto 0;
+  body:last-child:not(:root:root) input[type="email"],
+  body:last-child:not(:root:root) input[type="text"],
+  body:last-child:not(:root:root) input[type="tel"] {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder {
+    color: black;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+  }
+
+  input[type="email"]::-moz-placeholder,
+  input[type="text"]::-moz-placeholder {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  input:not(:placeholder-shown) {
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ba9569;
+  }
+  .button-cover {
+    height: 40px;
+    margin-top: 62px;
+    max-width: 195px;
+    width: 80%;
+  }
+  button {
+    color: #0e0e0d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.call-item-cover {
+  margin-top: 32px;
+  height: 34px;
+}
+
+.call-form-item {
+  box-shadow: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  border: 1px solid white;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 5px;
+  &:hover {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+  }
+}
+
+
+.custom-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.rules-accept{
+  margin-top: 20px;
+  font-size: 14px;
+  a{
+    text-decoration: underline;
+    color: black;
+  }
+}

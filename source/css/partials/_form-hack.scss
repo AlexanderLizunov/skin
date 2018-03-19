@@ -1,0 +1,49 @@
+
+body:last-child:not(:root:root) input[type="email"],
+body:last-child:not(:root:root) input[type="text"],
+body:last-child:not(:root:root) input[type="tel"] {
+  color: $place-holder-color;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 300;
+  font-size: $form-item-font-size;
+  line-height: normal;
+}
+
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder {
+  color: $place-holder-color;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 300;;
+  font-size: $form-item-font-size;
+  line-height: normal;
+}
+
+input[type="email"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder {
+  color: $place-holder-color;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 300;
+  font-size: $form-item-font-size;
+  line-height: normal;
+}
+
+input:not(:placeholder-shown) {
+  font-style: normal;
+  background-color: white;
+  border-color: #f8e1e1;
+}
+
+input {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px white !important; /* Цвет фона */
+  -webkit-text-fill-color: #999 !important; /* цвет текста */
+  color: #999 !important; /* цвет текста */
+}
+
+body:last-child:not(:root:root) .mauticform-errormsg {
+  bottom: -15px;
+}

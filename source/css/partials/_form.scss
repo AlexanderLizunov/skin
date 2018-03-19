@@ -1,0 +1,212 @@
+$form-item-height: 42px;
+$form-block-margin: 25px;
+$form-item-font-size: 16px;
+$place-holder-color: #333;
+$form-text-color: black;
+$base-text-color: #191919;
+$base-borders-color: #191919;
+$form-button-bg-color: #0a0a0a;
+$timer-number-color: #333;
+$timer-text-color: black;
+$form-item-cover-width: 49%;
+
+.form-cover {
+  display: inline-block;
+  width: 46%;
+  vertical-align: top;
+  max-width: 386px;
+  padding: 30px 33px 30px;
+  background-color: white;
+  box-shadow: 4px 5px 15px 1px rgba(0, 0, 1, 0.15);
+  text-align: justify;
+  position: relative;
+  @include phones_landscape {
+    margin: 20px auto;
+    display: block;
+    background-size: 100%;
+    width: 70%;
+    max-width: none;
+    padding: 9px 30px 30px;
+    position: static!important;
+  }
+  @include phones_L{
+    width: 85%;
+  }
+  //&:before{
+  //  position: absolute;
+  //  content: '';
+  //  display: block;
+  //  background-color: #f8e1e1;
+  //  height: 9px;
+  //  width: 30px;
+  //  left: 100%;
+  //  top: 78px;
+  //  @include phones_L{
+  //    display: none;
+  //  }
+  //}
+  //&:after{
+  //  position: absolute;
+  //  content: '';
+  //  display: block;
+  //  background-color: #f8e1e1;
+  //  height: 9px;
+  //  width: 30px;
+  //  left: 100%;
+  //  bottom: 78px;
+  //  @include phones_L{
+  //    display: none;
+  //  }
+  //}
+}
+
+.form-block {
+  position: relative;
+  //&:before{
+  //  position: absolute;
+  //  content: '';
+  //  display: block;
+  //  background-color: #f8e1e1;
+  //  height: 252px;
+  //  width: 9px;
+  //  right: -66px;
+  //  top: 48px;
+  //  @include phones_L{
+  //    display: none;
+  //  }
+  //}
+}
+
+.item-cover {
+  margin-top: $form-block-margin;
+  height: $form-item-height;
+  display: inline-block;
+  width: $form-item-cover-width;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  //&:after{
+  //  position: absolute;
+  //  display: block;
+  //  content: '';
+  //  bottom: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 2px;
+  //  background-color:  #7c7c7c;
+  //  color: red;
+  //  z-index: 10;
+  //}
+}
+
+.form-item {
+  padding-left: 16px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: $form-text-color;
+  //border: 1px solid $base-borders-color;
+  border: none;
+  font-size: $form-item-font-size;
+  font-weight: 300;
+  border-bottom: 1px solid #7c7c7c;
+  //box-shadow: 0 8px 27px rgba(0, 0, 0, 0.08);
+}
+
+.button-cover {
+  margin-top: 44px;
+  background: transparent;
+  text-align: right;
+  width: 100%;
+  @include phones_L {
+    text-align: right;
+    width: 100%;
+    margin-top: 25px;
+  }
+  &:after{
+    display: none;
+  }
+}
+
+.form-button {
+  display: inline-block;
+  width: 100%;
+  //display: block;
+  //width:60%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 0;
+  @include phones_L {
+    width: 100%;
+  }
+}
+
+.mauticform-errormsg {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  padding-left: 20px;
+  color: red;
+}
+
+.form-checkbox {
+  display: inline-block;
+  height: 24px;
+  width: 24px !important;
+  vertical-align: top;
+  position: absolute;
+  left: -30px;
+  top: -4px;
+}
+
+.form-checkbox-cover {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-checkbox-label {
+  display: block;
+  margin-top: 15px;
+  vertical-align: top;
+  margin-left: 30px;
+  position: relative;
+  line-height: 1.2;
+  text-align: left;
+  color: #7c7c7c;
+  font-size: 15px;
+  font-weight: 300;
+  a {
+    text-decoration: underline;
+    color: #7c7c7c;
+    cursor: pointer;
+  }
+}
+
+.checkbox-error {
+  bottom: -16px;
+  left: 8px;
+}
+
+select, input {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mauticform-has-error{
+ input{
+  border-color: red;
+  }
+}
+
+.form-comment{
+  color: black;
+  font-size: 15px;
+  a{
+    color:black;
+    text-decoration: underline;
+  }
+}

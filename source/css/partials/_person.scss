@@ -1,0 +1,55 @@
+.person-container{
+  max-width: 1050px;
+  text-align: justify;
+  padding-bottom: 120px;
+  margin-top: 80px;
+  @include screenTo1930{
+  margin-top: -90px;
+
+  }
+  @include phones_L{
+    padding-bottom: 0;
+  }
+}
+
+.persone-main-title{
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px ;
+  padding-bottom: 80px;
+}
+
+
+.person-image{
+  width: 38%;
+  height: auto;
+}
+
+
+.person-text-cover{
+  display: inline-block;
+  width: 53%;
+  vertical-align: top;
+  @include phones_L{
+    width: 58%;
+  }
+}
+
+.person-title{
+  font-weight: 800;
+  font-size: 30px;
+  @include phones_L{
+    font-size: 26px;
+  }
+}
+
+.person-list{
+  padding-left: 0;
+  list-style-type: none;
+  li{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,84 @@
+.collagen-section{
+  padding-top: 130px;
+  padding-bottom: 180px;
+  background-image: url("../img/images/colagen-bg.png");
+  background-position: right top;
+  background-size: 48% 100% ;
+  position: relative;
+  z-index: 2;
+  .services-content-cover{
+    margin-top: 50px;
+    max-width: none;
+  }
+  .services-content-title{
+    margin-left: 0;
+  }
+  .services-title-comment{
+    margin-top: 35px;
+    @include phones_landscape{
+      margin-top: 16px;
+    }
+  }
+  .services-block-left{
+    width: 44%;
+    @include laptop_S{
+      width: 49%;
+      margin-top: 100px;
+    }
+    @include phones_landscape{
+      margin-top: 0;
+      width: 60%;
+      height: auto;
+    }
+  }
+  .services-block-right{
+    width: 55%;
+    @include screenTo1930{
+      width: 49%;
+    }
+    @include laptop_1280{
+      width: 50%;
+    }
+    @include tablets{
+      width: 49%;
+    }
+    @include phones_landscape{
+      width: 90%;
+      margin-top: 0;
+    }
+  }
+  @include laptop_1680{
+    background-position: right top;
+    background-size: 47% 100% ;
+  }
+  @include laptop_1440{
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  @include laptop_1280{
+    background-size: 50% 100% ;
+  }
+  @include laptop_S{
+    padding-top: 0;
+    padding-bottom: 50px;
+    background-size: 51% 100% ;
+
+  }
+  @include phones_landscape{
+    background-position: right top;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.collagen-container{
+  max-width: 1360px;
+  margin-top: 0;
+  text-align: justify;
+  @include phones_landscape{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}

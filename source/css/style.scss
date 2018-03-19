@@ -1,0 +1,98 @@
+.custom-container {
+  width: 93.75%;
+  max-width: 1370px;
+  margin: auto;
+  position: relative;
+}
+@import 'foundation';
+@import 'helpers/media';
+@import "helpers/mixin-bootstrap";
+@import "helpers/modals-bootstrap";
+@import 'helpers/colors';
+@import 'partials/promo';
+@import "partials/advantages";
+@import "partials/services";
+@import "partials/hue";
+@import "partials/collagen";
+@import "partials/hollywood";
+@import "partials/hollywood-hue";
+@import "partials/sharing";
+@import "partials/prise";
+@import "partials/clients";
+@import "partials/person";
+@import 'partials/form';
+@import "partials/form-hack";
+@import "partials/form-button";
+@import 'partials/details';
+@import "partials/footer";
+@import "partials/location";
+@import "partials/modal-call";
+//@import "partials/prize";
+@import "partials/call";
+@import "partials/header";
+@import "partials/arrow-up";
+@import "partials/timer";
+@import "partials/cta";
+@import "partials/callback";
+html {
+  font-family: 'Open Sans', sans-serif;
+  @include tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 12px;
+  }
+
+}
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  transition: 0.5s;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.inline-fake {
+  width: 100%;
+  display: inline-block;
+  height: 0;
+  content: "";
+}
+
+//TODO:: ALL ERROR MESAGES IN 1 SPOT
+
+.mauticform-row {
+
+  position: relative;
+  @include phones {
+    width: 100%;
+  }
+}
+
+
+.text-ad-links{
+  display: none!important;
+}
+

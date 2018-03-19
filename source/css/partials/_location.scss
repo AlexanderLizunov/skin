@@ -1,0 +1,75 @@
+.location-section {
+  height: 560px;
+  position: relative;
+}
+
+.location-map {
+  height: 100%;
+}
+
+.location-block {
+  background-color: white;
+  border-radius: 56px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 585px;
+  padding: 10px 30px 5px;
+}
+
+.location-item {
+  vertical-align: top;
+  margin-bottom: 2px;
+  span {
+    vertical-align: top;
+    display: inline-block;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    min-width: 63px;
+  }
+  p {
+    display: inline-block;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+
+$black: rgb(255, 170, 48);
+
+.gm-style-iw {
+  overflow: visible !important;
+
+  div {
+    overflow: visible !important;
+
+  }
+}
+
+.gm-style-iw + div {
+  display: none;
+  padding: 20px;
+}
+
+.location-block {
+  width: 585px;
+  @include phones_L {
+    width: 350px;
+  }
+}
+
+.location-phone {
+  width: 140px;
+  line-height: 24px;
+}
+
+.gm-style .gm-style-iw {
+  margin-top: -17px;
+  margin-right: -40px;
+}

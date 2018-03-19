@@ -1,0 +1,266 @@
+<!--<script src="js/Boundstart.js"></script>-->
+<script src="js/script.js"></script>
+<script>
+    if (typeof MauticFormCallback == 'undefined') {
+        var MauticFormCallback = {};
+    }
+    MauticFormCallback['kozhasubscribe'] = {
+        onResponse: function (response) {
+            console.log(response)
+            if (response.success == 1) {
+                $('#modal-subscribe').modal('hide');
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: location.protocol + '//' + location.host + location.pathname + "send-order-form",
+                    // url: window.location.href + "send-order-form",
+                    data: {lead: {
+                            name: response.results.ima,
+                            email: response.results.email,
+                            phone: response.results.phone,
+                            service: response.results.direction,
+                            type: 'Заказ',
+                        }},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Submit',
+                    eventAction: 'submit-form',
+                    eventLabel: eventButton,
+                    eventValue: 1
+                });
+
+                 fbq('track', 'Lead', {
+                     value: 1.00,
+                     currency: 'USD'
+                 });
+
+            }
+
+            // BS.Tracker.getUserId(response.results.email);
+        }
+    };
+    MauticFormCallback['kozhacall'] = {
+        onResponse: function (response) {
+            console.log(response)
+            if (response.success == 1) {
+                $('#modal-call').modal('hide');
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: location.protocol + '//' + location.host + location.pathname + "send-callback-form",
+                    // url: window.location.href + "send-callback-form",
+                    data: {lead: {
+                            name: response.results.ima,
+                            phone: response.results.phone,
+                            service: '',
+                            type: 'Перезвон',
+                        }},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Submit',
+                    eventAction: 'submit-form',
+                    eventLabel: eventButton,
+                    eventValue: 1
+                });
+
+                 fbq('track', 'Lead', {
+                     value: 1.00,
+                     currency: 'USD'
+                 });
+
+            }
+
+            // BS.Tracker.getUserId(response.results.email);
+        }
+    };
+    MauticFormCallback['kozhasubscribepromo'] = {
+        onResponse: function (response) {
+            console.log(response)
+            if (response.success == 1) {
+                $('#modal-subscribe').modal('hide');
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: location.protocol + '//' + location.host + location.pathname + "send-order-form",
+                    // url: window.location.href + "send-order-form",
+                    data: {lead: {
+                            name: response.results.ima,
+                            email: response.results.email,
+                            phone: response.results.phone,
+                            service: response.results.direction,
+                            type: 'Акция',
+                        }},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Submit',
+                    eventAction: 'submit-form',
+                    eventLabel: 'subscribe-promo',
+                    eventValue: 1
+                });
+
+                 fbq('track', 'Lead', {
+                     value: 1.00,
+                     currency: 'USD'
+                 });
+
+            }
+
+            // BS.Tracker.getUserId(response.results.email);
+        }
+    };
+    MauticFormCallback['kozhasubscribecta1'] = {
+        onResponse: function (response) {
+            console.log(response)
+            if (response.success == 1) {
+                $('#modal-subscribe').modal('hide');
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: location.protocol + '//' + location.host + location.pathname + "send-order-form",
+                    // url: window.location.href + "send-order-form",
+                    data: {lead: {
+                            name: response.results.ima,
+                            email: response.results.email,
+                            phone: response.results.phone,
+                            service: response.results.direction,
+                            type: 'Акция',
+                        }},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Submit',
+                    eventAction: 'submit-form',
+                    eventLabel: 'subscribe-cta-1',
+                    eventValue: 1
+                });
+
+                 fbq('track', 'Lead', {
+                     value: 1.00,
+                     currency: 'USD'
+                 });
+
+            }
+
+            // BS.Tracker.getUserId(response.results.email);
+        }
+    };
+    MauticFormCallback['kozhasubscribecta2'] = {
+        onResponse: function (response) {
+            console.log(response)
+            if (response.success == 1) {
+                $('#modal-subscribe').modal('hide');
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: "POST",
+                    url: location.protocol + '//' + location.host + location.pathname + "send-order-form",
+                    // url: window.location.href + "send-order-form",
+                    data: {lead: {
+                            name: response.results.ima,
+                            email: response.results.email,
+                            phone: response.results.phone,
+                            service: response.results.direction,
+                            type: 'Акция',
+                        }},
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Submit',
+                    eventAction: 'submit-form',
+                    eventLabel: 'subscribe-cta-2',
+                    eventValue: 1
+                });
+
+                 fbq('track', 'Lead', {
+                     value: 1.00,
+                     currency: 'USD'
+                 });
+
+            }
+
+            // BS.Tracker.getUserId(response.results.email);
+        }
+    };
+</script>
+
+
+
+<!--<script>-->
+    <!--fbq('track', 'ViewContent', {-->
+        <!--value: 1,-->
+        <!--currency: 'USD',-->
+    <!--});-->
+<!--</script>-->
+
+
+
+<!--&lt;!&ndash;TODO::change params here&ndash;&gt;-->
+<!--<script type="text/javascript">-->
+    <!--VK.Widgets.Like('vk_like', {type: "mini", verb: "0", pageTitle: "Конкурс от “Bvdbeauty” г. Москва стань одним из 9 победителей ", pageUrl: "http://bvdbeauty.boundstart.ru/?utm_source=VK&utm_medium=repost&utm_campaign=contest", pageImage: "http://bvdbeauty.boundstart.ru/img/images/og-vk.jpg"}, 224);-->
+<!--</script>-->
+
+
+<!--&lt;!&ndash;TODO::change id here&ndash;&gt;-->
+<!--<script type="text/javascript">-->
+    <!--VK.Widgets.Subscribe('vk_subscribe', {mode: 1, soft: 1}, -57852722);-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--document.getElementById('vk_share_button').innerHTML = VK.Share.button('http://zagar-msk.ru/?utm_source=VK&utm_medium=repost&utm_campaign=contest', {type: 'round_nocount', text:'Share'});-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--document.getElementById('vk_share_button2').innerHTML = VK.Share.button('http://zagar-msk.ru/?utm_source=VK&utm_medium=repost&utm_campaign=contest', {type: 'round_nocount', text:'Share'});-->
+<!--</script>-->

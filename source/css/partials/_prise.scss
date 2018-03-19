@@ -1,0 +1,108 @@
+.price-section{
+  margin-top: 0;
+  padding: 150px 0 130px;
+  .custom-container{
+    max-width: 1200px;
+  }
+  .advantages-item{
+    width: 31%;
+    max-width: 405px;
+    margin-top: 62px;
+    padding: 57px 0 0;
+    min-height: 0;
+    box-shadow: 0 43px 128px rgba(0, 0, 0, 0.09);
+    position: relative;
+    &:hover{
+      transform: scale(1.1) translateY(50px) translateZ(0);
+    }
+    @include phones_landscape{
+      padding: 36px 0 0;
+      margin: 50px auto 0;
+      width: 46%;
+      display: block;
+    }
+    @include phones_L {
+      width: 80%;
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+  .advantages-image{
+    margin-top: 48px;
+    height: 176px;
+    @include phones_landscape{
+      margin-top: 20px;
+      height: 130px;
+    }
+  }
+  .advantages-title{
+    margin-top: 62px;
+    @include phones_landscape{
+      margin-top: 20px;
+    }
+  }
+  .advantages-text{
+    text-transform: uppercase;
+    @include phones_L{
+      font-size: 18px;
+    }
+  }
+  .price-button{
+    top:auto;
+    bottom: -28px;
+    background-color: #3f0348;
+    color: white;
+    border: 2px solid #3f0348;
+    border-radius: 100px;
+    &:hover{
+      background: white;
+      color: black;
+    }
+    @include phones_L{
+      width: 80%;
+    }
+  }
+  @include laptop_1440{
+    padding-top: 60px;
+  }
+  @include laptop_S{
+    padding-top: 50px;
+  }
+}
+
+.price-pre-title{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-title{
+  color: #010101;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price-card-1{
+  background-color: rgba(246, 234, 229, .8);
+  &:hover{
+    background-color: darken(#f6eae5, 5%);
+  }
+}
+
+.price-card-2{
+  background-color: lighten(#b4948c, 10%);
+  &:hover{
+    background-color: #b4948c;
+  }
+}
+
+.price-card-3{
+  background-color: rgba(236, 213, 204, 0.99);
+  &:hover{
+    background-color: #ecd5cc;
+  }
+}

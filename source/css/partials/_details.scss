@@ -1,0 +1,354 @@
+.details-section {
+  margin: auto;
+  padding-top: 140px;
+  position: relative;
+  text-align: justify;
+  width: 93%;
+  display: block;
+  @include phones_landscape {
+    padding-bottom: 0;
+  }
+  @include phones_L {
+    width: 90%;
+    padding-top: 60px;
+  }
+  @include phones_S {
+    width: 95%;
+    //overflow: hidden;
+  }
+}
+
+.details-container {
+  width: 93.75%;
+  max-width: 963px;
+  margin: auto;
+  text-align: justify;
+  position: relative;
+  @include tablets {
+
+    display: block;
+  }
+}
+
+.details-main-title {
+  color: #333;
+  font-family: ProximaNova, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    text-decoration: underline;
+  }
+  @include phones_L {
+    font-size: 22px;
+  }
+}
+
+.details-title-comment {
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: none;
+  margin-top: 5px;
+  margin-bottom: 56px;
+  text-align: center;
+  @include phones_L {
+    margin-bottom: 0;
+  }
+}
+
+.details_content {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  @include laptop_S {
+    margin-top: 50px;
+    padding: 0 10px 20px 30px;
+  }
+  @include tablets {
+    padding: 25px 10px 30px 10px;
+    margin: auto;
+  }
+
+  @include phones_L {
+    width: 100%;
+    padding-top: 0;
+  }
+  @include phones_landscape {
+    padding-top: 0;
+  }
+}
+
+.details_content-title {
+  display: inline-block;
+  margin-top: 0;
+  text-align: left;
+  width: auto;
+  position: relative;
+  line-height: 23px;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  @include laptop_S {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  @include tablets {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  @include phones_landscape {
+    font-size: 21px;
+  }
+  @include phones_L {
+    text-align: left;
+  }
+
+}
+
+.details_content-list {
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  list-style-type: none;
+  @include laptop_S {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  @include tablets {
+    text-align: left;
+    margin-top: 20px;
+    li {
+      text-align: left;
+    }
+  }
+  @include phones_landscape {
+    margin-top: 0;
+  }
+  @include phones_L {
+    margin-top: 25px;
+  }
+  @include phones_M {
+    margin-left: 0;
+  }
+  @include phones_S {
+    margin-top: 35px;
+  }
+}
+
+.details_content-text {
+  //display: block;
+  text-align: left;
+  margin-top: 10px;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  box-sizing: border-box;
+  @include laptop_S {
+    line-height: 1.1;
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+  @include tablets {
+    text-align: center;
+  }
+  @include phones_landscape {
+    font-size: 19px;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    border-radius: 15px;
+    left: -16px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #85d9bf;
+    opacity: 0.41;
+  }
+}
+
+.list-item__active {
+  &:after {
+    position: absolute;
+    content: '';
+    border-radius: 15px;
+    left: -16px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border: 3px solid #85d9bf
+  }
+}
+
+.last-button {
+  @include phones_L {
+    margin-bottom: 0;
+    display: block;
+  }
+}
+
+.slider-cover {
+  display: inline-block;
+  width: 70%;
+  max-width: 652px;
+  text-align: justify;
+  @include tablets {
+    margin: auto;
+    text-align: center;
+    max-width: none;
+  }
+  @include phones_L {
+    width: 100%;
+  }
+}
+
+.details_slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 456px;
+  display: inline-block;
+  vertical-align: top;
+  @include tablets {
+    width: 100%;
+    height: 320px;
+    display: inline-block;
+    vertical-align: top;
+    //max-height: 500px;
+    min-height: 100%;
+    position: relative;
+    //img {
+    //  height: 100%;
+    //  width: auto;
+    //  @include tablets {
+    //    width: 100%;
+    //    height: auto;
+    //  }
+    //}
+  }
+  @include phones_landscape {
+    //width: 70%;
+    height: 260px;
+    //position: absolute;
+    //left: 0
+  }
+  @include phones_L {
+    height: 340px;
+  }
+  @include phones_S {
+    height: 300px;
+  }
+
+}
+
+.slider-main_image {
+  position: absolute;
+  width: 100%;
+  //min-width: 100%;
+  transform: translateZ(0);
+  opacity: 0;
+  transition: .9s;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include laptop_1680 {
+    height: 100%;
+    width: auto;
+  }
+  @include phones_L {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.slider-buttons {
+  text-align: justify;
+  display: block;
+  width: 100%;
+  vert-align: top;
+  @include laptop_S {
+    min-width: 110px;
+
+  }
+  @include tablets {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    //margin-left: 60px;
+  }
+
+}
+
+.slider-buttons_image {
+  margin-top: 9px;
+  display: inline-block;
+  height: auto;
+  width: 15.6%;
+  //height: 94px;
+  cursor: pointer;
+  transition: .7s;
+  transform: translateZ(0);
+  z-index: 1;
+  position: relative;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:hover {
+    z-index: 5;
+    transform: scale(1.2);
+  }
+  @include tablets {
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+  }
+}
+
+.slider-main_image__active {
+  opacity: 1;
+}
+
+.details_button {
+  transition: .3s;
+  border: 2px solid black;
+  margin: 60px auto;
+  padding: 16px 60px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  @include phones_landscape {
+    width: 70%;
+  }
+
+  &:hover {
+    //background-color: $important-gold;
+    background-color: transparent;
+    color: black;
+    //color: #ffffff;
+  }
+}

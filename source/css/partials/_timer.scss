@@ -1,0 +1,84 @@
+.timer-cover{
+  text-align: right;
+  @include phones_L{
+    text-align: center;
+  }
+}
+
+.content-block_timer {
+  margin-top: 10px;
+  padding: 0;
+  //background-color: rgba(154, 204, 214, 0.3);
+  margin-bottom: 13px;
+  text-align: justify;
+  width: 410px;
+  display: inline-block;
+  @include phones_L{
+    display: block;
+    width: auto;
+    text-align: justify;
+  }
+  //@include laptop_1680{
+  //  display: block;
+  //  margin: 20px auto 0;
+  //}
+  //@include tablets {
+  //  margin-top: 20px;
+  //}
+  //@include phones_S {
+  //  width: 100%;
+  //}
+}
+
+.timer-comment {
+  margin-top: 46px;
+  margin-right: 24px;
+  vertical-align: top;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  @include phones_L{
+    font-weight: 800;
+    font-size: 20px;
+  }
+  //@include laptop_1680 {
+  //  margin-top: 0;
+  //}
+  //@include laptop_1440 {
+  //  margin-top: 20px;
+  //}
+}
+
+.timer-item {
+  display: inline-block;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+  .number {
+    margin-top: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: #c7c1be;
+    color: #544140;
+    font-size: 46px;
+    line-height: 60px;
+    width: 89px;
+    height: 69px;
+    @include phones_L {
+      font-size: 30px;
+    }
+  }
+  .text {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

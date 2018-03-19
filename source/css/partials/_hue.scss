@@ -1,0 +1,129 @@
+.hue-section{
+  padding-top: 104px;
+  padding-bottom: 160px;
+  position: relative;
+  margin-top: -20px;
+  background-image: url("../img/images/color-bg.jpg");
+  background-size: cover;
+  @include laptop_1440{
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+
+.hue-title{
+  color: #fffeff;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: auto;
+  max-width: 90%;
+}
+
+.hue-container{
+  max-width: 1280px;
+  text-align: justify;
+  @include phones_landscape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+
+.hue-item{
+  margin-top: 70px;
+  display: inline-block;
+  width: 30%;
+  max-width: 395px ;
+  text-align: center;
+  @include laptop_1440{
+    margin-top: 40px;
+  }
+  @include phones_landscape{
+    width: 40%;
+  }
+  @include phones_L{
+    width: 45%;
+  }
+  @include phones_S{
+    width: 48%;
+  }
+}
+
+.hue-item-title{
+  color: #fffeff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.hue-item-image{
+  margin-top: 34px;
+  width: 100%;
+  height: auto;
+  display: block;
+  //@include phones_landscape{
+  //  height: 200px;
+  //  width: auto;
+  //  display: block;
+  //  margin: 30px auto 0;
+  //}
+}
+
+.hue-item-button{
+  padding-top: 18px;
+  padding-bottom: 16px;
+  width: 60%;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 24px;
+  background-color: #eacec3;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -28px;
+  &:hover{
+    background-color: darken(#eacec3, 10%);
+  }
+  @include tablets{
+    width: 82%;
+  }
+  @include phones_landscape{
+    width: 80%;
+  }
+  @include phones_L{
+    width: 80%;
+    font-size: 14px;
+  }
+  @include phones_S{
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hue-subscribe-button{
+  margin: 115px auto 0;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  width: 60%;
+  max-width: 325px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 50px;
+  background-color: #eacec3;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: darken(#eacec3, 10%);
+  }
+}

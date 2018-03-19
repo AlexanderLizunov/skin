@@ -1,0 +1,33 @@
+.hollywood-hue{
+  background-image: url("../img/images/hue-bg.jpg");
+
+  .hue-item{
+    width: 22%;
+    @include phones_landscape{
+      width: 28%;
+      display: inline-block;
+      margin-top: 30px;
+    }
+  }
+  .hue-item-image{
+    margin-top: 8px;
+  }
+  //@include phones_landscape{
+  //  .hue-container{
+  //    justify-content: space-between;
+  //  }
+  //}
+  @include phones_L{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .hue-subscribe-button{
+    margin-top: 50px;
+  }
+}
+
+.hue-item-title{
+  @include phones_L{
+    font-size: 16px;
+  }
+}
